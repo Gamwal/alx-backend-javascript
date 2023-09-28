@@ -15,10 +15,10 @@ export default class HolbertonCourse {
 
   set name(name) {
     if (typeof name !== 'string') {
-        throw new TypeError('Name must be a string');
+      throw new TypeError('Name must be a string');
     } else {
     // eslint-disable-next-line no-underscore-dangle
-    this._name = name;
+      this._name = name;
     }
   }
 
@@ -28,11 +28,11 @@ export default class HolbertonCourse {
   }
 
   set length(length) {
-    if (typeof length != 'number') {
-        throw new TypeError('Length must be a number');
+    if (typeof length !== 'number') {
+      throw new TypeError('Length must be a number');
     } else {
     // eslint-disable-next-line no-underscore-dangle
-    this._length = length;
+      this._length = length;
     }
   }
 
@@ -43,10 +43,10 @@ export default class HolbertonCourse {
 
   set students(students) {
     if (!Array.isArray(students) || students.some((student) => typeof student !== 'string')) {
-        throw new TypeError('students must be an array of strings');
-    } else {  
+      throw new TypeError('students must be an array of strings');
+    } else {
     // eslint-disable-next-line no-underscore-dangle
-    this._students = students;
+      this._students = students;
     }
   }
 }
