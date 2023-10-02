@@ -1,5 +1,4 @@
 export default function getStudentIdsSum(arr) {
-  const sum = 0;
-  const sumi = arr.reduce((accumulator, currVal) => accumulator + currVal, sum);
-  return sumi;
+  const sum = arr.reduce((accumulator, currVal) => accumulator + currVal.id, 0);
+  return sum;
 }
