@@ -1,0 +1,5 @@
+*main.js
+*.json*
+node_modules/
+webpack.config.js
+.eslintrc*
