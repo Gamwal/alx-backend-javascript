@@ -10,11 +10,11 @@ export default class Car {
   }
 
   [cloneCarSymbol](_brand, _motor, _color) {
-    return new Car(_brand, _motor, _color);
+    return new this.constructor(_brand, _motor, _color);
   }
 
   cloneCar(_brand, _motor, _color) {
-    const instance = new Car();
+    const instance = new this.constructor();
     return instance[cloneCarSymbol](_brand, _motor, _color);
   }
 }
